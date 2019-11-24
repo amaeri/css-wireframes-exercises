@@ -1,0 +1,26 @@
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial; 
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+main {
+    display:grid;
+    gap: 0.2rem;
+    padding: 0.2rem;
+    grid-template-columns: 2fr 4fr 6fr 6fr;
+    grid-template-rows: 4fr 2fr 4fr 6fr;
+}
+
+div.section {
+    color: white;
+    background-color: #4285F4;
+    min-height: 100px;
+    min-width: 100px;
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,29 @@
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial; 
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  main > div {
+    background: #4285F4;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+  }

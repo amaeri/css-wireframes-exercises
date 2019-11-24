@@ -1,0 +1,55 @@
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial;
+    background-color: black;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    padding:1rem;
+    grid-template-areas:
+        "main main main main main main aside aside"
+        "center-left center-left center-center center-center center-center center-center center-right center-right"
+        "footer footer footer footer footer footer footer footer"
+}
+
+div {
+    padding: 0.5rem;
+}
+
+.main {
+    background-color: salmon;
+    grid-area: main;
+}
+
+.aside {
+    background-color: orchid;
+    grid-area: aside;
+}
+
+.center-left {
+    background-color: steelblue;
+    grid-area: center-left;
+}
+
+.center-center {
+    background-color: gainsboro;
+    grid-area: center-center;
+}
+
+.center-right {
+    background-color: olive;
+    grid-area: center-right;
+}
+
+.footer{
+    background-color: #4285F4;;
+    grid-area: footer;
+}
